@@ -29,17 +29,8 @@ public class GameControl : MonoBehaviour
                 Ending();
                 oneTimer = false;
             }
-            if (Input.GetKey(KeyCode.R))
-            {
-                SceneManager.LoadScene("SampleScene");
-            }
-            foreach (Touch touch in Input.touches)
-            {
-                if (touch.tapCount == 2)
-                {
-                    SceneManager.LoadScene("SampleScene");
-                }
-            }
+            Restart();
+            Quit();
         }
         else
         {
@@ -52,6 +43,33 @@ public class GameControl : MonoBehaviour
         spawner.spawn = false;
         end.gameObject.SetActive(true);
         if (time > bestTime) bestTime = (int)time;
-        end.text = "Best time so far: " + bestTime + "s.\nPress R or double tap to restart!";
+        end.text = "Best time so far: " + bestTime + "s.\nPress R or double tap to restart! \n Press Q or tap 3 times to quit!";
+    }
+    private void Restart()
+    {
+        if (Input.GetKey(KeyCode.R))
+        {
+            SceneManager.LoadScene("SampleScene");
+        }
+        foreach (Touch touch in Input.touches)
+        {
+            if (touch.tapCount == 2)
+            {
+                SceneManager.LoadScene("SampleScene");
+            }
+        }
+    }
+    private void Quit(){
+        if (Input.GetKey(KeyCode.Q))
+        {
+           Application.Quit();
+        }
+        foreach (Touch touch in Input.touches)
+        {
+            if (touch.tapCount == 3)
+            {
+                Application.Quit();
+            }
+        }
     }
 }
