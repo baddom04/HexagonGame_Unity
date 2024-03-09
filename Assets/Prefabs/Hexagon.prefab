@@ -77,12 +77,12 @@ LineRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Positions:
-  - {x: -0.5, y: 0.7, z: 0}
-  - {x: -0.8, y: 0, z: 0}
-  - {x: -0.5, y: -0.7, z: 0}
-  - {x: 0.5, y: -0.7, z: 0}
-  - {x: 0.8, y: 0, z: 0}
-  - {x: 0.5, y: 0.7, z: 0}
+  - {x: -0.5, y: 0.8, z: 0}
+  - {x: -0.9, y: 0, z: 0}
+  - {x: -0.5, y: -0.8, z: 0}
+  - {x: 0.5, y: -0.8, z: 0}
+  - {x: 0.9, y: 0, z: 0}
+  - {x: 0.5, y: 0.8, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.15
@@ -221,12 +221,12 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.5, y: 0.7}
-  - {x: -0.8, y: 0}
-  - {x: -0.5, y: -0.7}
-  - {x: 0.5, y: -0.7}
-  - {x: 0.8, y: 0}
-  - {x: 0.5, y: 0.7}
+  - {x: -0.5, y: 0.8}
+  - {x: -0.9, y: 0}
+  - {x: -0.5, y: -0.8}
+  - {x: 0.5, y: -0.8}
+  - {x: 0.9, y: 0}
+  - {x: 0.5, y: 0.8}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
