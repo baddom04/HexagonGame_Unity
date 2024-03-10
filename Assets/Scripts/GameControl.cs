@@ -43,7 +43,7 @@ public class GameControl : MonoBehaviour
         spawner.spawn = false;
         end.gameObject.SetActive(true);
         if (time > bestTime) bestTime = (int)time;
-        end.text = "Best time so far: " + bestTime + "s.\nPress R or double tap to restart! \n Press Q or tap 3 times to quit!";
+        end.text = "Best time so far: " + bestTime + "s.\nPress R or double tap to restart! \n Press Q or hold your finger on the screen quit!";
     }
     private void Restart()
     {
@@ -66,7 +66,7 @@ public class GameControl : MonoBehaviour
         }
         foreach (Touch touch in Input.touches)
         {
-            if (touch.tapCount == 3)
+            if (touch.deltaTime >= 2)
             {
                 Application.Quit();
             }
