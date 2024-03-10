@@ -43,7 +43,7 @@ public class GameControl : MonoBehaviour
         spawner.spawn = false;
         end.gameObject.SetActive(true);
         if (time > bestTime) bestTime = (int)time;
-        end.text = "Best time so far: " + bestTime + "s.\nPress R or double tap to restart! \n Press Q or hold your finger on the screen quit!";
+        end.text = "Best time so far: " + bestTime + "s.\nPress R or double tap to restart! \n Press Q or hold your finger on the screen to quit!";
     }
     private void Restart()
     {
